@@ -22,7 +22,7 @@ if(app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();    
 }
 
-app.MapDefaultControllerRoute();
+app.MapDefaultControllerRoute();//{contorller=Home}/{action=Index}/{id?}
 
 DbInitializer.Seed(app);
 app.Run();

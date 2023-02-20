@@ -20,7 +20,7 @@
                
                 <div class="d-flex justify-content-between mt-2">
                     <h4 class="text-start">
-                        <a class="pie-link">@game.Name</a>
+                        <a class="pie-link" asp-controler="Game" asp-action="Details" asp-route-id="@game.Id" >@game.Name</a>
                     </h4>
                     <h5 class="text-nowrap">
                         @game.Price.ToString("c")

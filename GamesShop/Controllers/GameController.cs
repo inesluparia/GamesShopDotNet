@@ -22,8 +22,16 @@ namespace GamesShop.Controllers
             //ViewBag.Test = "Hola from the view bag!";
             //return View(_gameRepository.GetAll);
 
-            GameListViewModel gameListViewModel = new GameListViewModel(_gameRepository.AllGames, "Switch");
+            GameListViewModel gameListViewModel = new GameListViewModel(_gameRepository.AllGames, "All games");
             return View(gameListViewModel);
+        }
+
+        public IActionResult Details(int id)
+        {
+            var game = _gameRepository.GetGameById(id);
+            if (game == null)
+                return NotFound();
+            return View(game);
         }
 
     }

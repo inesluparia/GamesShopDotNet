@@ -22,7 +22,8 @@
                         Price = 65,
                         Description = "Lorem Ipsum",
                         Platform = Platforms["Switch"],
-                        ThumbnailImageName = "minecraft-nsTh.jpg"
+                        ThumbnailImageName = "minecraft-nsTh.jpg",
+                        ImageName = "minecraft-ns.jpg"
                     },
                     new Game
                     {
@@ -32,7 +33,8 @@
                         Price = 45,
                         Description = "Lorem Ipsum",
                         Platform = Platforms["PS4"],
-                        ThumbnailImageName = "sonic-forcesTh.jpg"
+                        ThumbnailImageName = "sonic-forcesTh.jpg",
+                        ImageName = "sonic-forces.jpg"
                     },
                     new Game
                     {
@@ -42,7 +44,8 @@
                         Price = 50,
                         Description = "Lorem Ipsum",
                         Platform = Platforms["Switch"],
-                        ThumbnailImageName = "plantsVsZombiesTh.jpg"
+                        ThumbnailImageName = "plantsVsZombiesTh.jpg",
+                        ImageName = "plantsVsZombies.jpg"
                     }
                 );
             }

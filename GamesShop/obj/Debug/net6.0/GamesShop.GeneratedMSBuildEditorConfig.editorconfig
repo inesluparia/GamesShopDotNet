@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\benji\Documents\CSharp\GamesShop\GamesShop
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/benji/Documents/CSharp/GamesShop/GamesShop/Views/Game/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/benji/Documents/CSharp/GamesShop/GamesShop/Views/Game/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/benji/Documents/CSharp/GamesShop/GamesShop/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/benji/Documents/CSharp/GamesShop/GamesShop/Views/Shared/_Layout.cshtml]

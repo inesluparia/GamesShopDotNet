@@ -1,0 +1,23 @@
+﻿@model Game
+
+@{
+    Layout = "_Layout";
+}
+
+<h3 class="my-5">
+    @Model.Name
+</h3>
+
+<div class="row gx-5">
+    <img alt="@Model.Name" src="~/Images/@(Model.ImageName)" class="img-fluid col-3" />
+    <div class="col-7">
+        <h4>@Model.Description</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3 class="pull-right">@Model.Price.ToString("c")</h3>
+        <div class="addToCart">
+            <p class="button">
+
+            </p>
+        </div>
+    </div>
+</div>
