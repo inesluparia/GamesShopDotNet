@@ -1,0 +1,32 @@
+﻿@model GameListViewModel
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Current Platform @(Model.CurrentPlatform)</h2>
+@foreach (var game in Model.Games)
+{
+@*    <div>
+        <h2>@game.Name</h2>
+        <h3>@game.Price.ToString("c")</h3>
+        <h4>@game.Platform.PlatformName</h4>
+    </div>*@
+
+    <div class="col">
+        <div class="card pie-card">
+            <img src="~/Images/@(game.ThumbnailImageName)" width="100" alt="@game.Name">
+            <div class="card-body pie-button">
+               
+                <div class="d-flex justify-content-between mt-2">
+                    <h4 class="text-start">
+                        <a class="pie-link">@game.Name</a>
+                    </h4>
+                    <h5 class="text-nowrap">
+                        @game.Price.ToString("c")
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+}
