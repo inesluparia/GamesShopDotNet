@@ -1,0 +1,27 @@
+﻿@model Game
+
+<div class="col">
+    <div class="card game-card">
+        <img src="~/Images/@(Model.ImageName)" class="card-img-top" alt="@Model.Name">
+        <div class="card-body game-button">
+            <h4 class="d-grid">
+                <a class="btn btn-secondary"
+                    asp-controller="ShoppingCart"
+                    asp-action="AddToShoppingCart"
+                    asp-route-gameId="@Model.Id"> + Add to cart</a>
+            </h4>
+
+            <div class="d-flex justify-content-between mt-2">
+                <h3 class="text-start">
+                    <a asp-controller="Game"
+                       asp-action="Details"
+                       asp-route-id="@Model.Id"
+                       class="game-link">@Model.Name</a>
+                </h3>
+                <h6 class="text-nowrap">
+                    @Model.Price.ToString("c")
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>

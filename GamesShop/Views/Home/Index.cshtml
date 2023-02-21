@@ -3,55 +3,18 @@
     Layout = "_Layout";
 }
 
-<div id="carouselImages" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="~/Images/carousel1.jpg" class="d-block w-100" alt="Carousel image 1">
-        </div>
-        <div class="carousel-item">
-            <img src="~/Images/carousel2.jpeg" class="d-block w-100" alt="Carousel image 2">
-        </div>
-        <div class="carousel-item">
-            <img src="~/Images/carousel3.jpg" class="d-block w-100" alt="Carousel image 3">
-        </div>
-    </div>
-</div>
+<partial name="_Carousel" />
 
 <div class="text-center">
     @*<img src="~/Images/logo.png" class="logo-mark mx-auto" />*@
-    <h1>Games of the week</h1>
-    <h5>Enjoy a weekly selection of our favorite games</h5>
+    <h2 class="tp-30">Games of the week</h2>
+    <h6>Enjoy a weekly selection of our favorite games</h6>
 
     <div class="row games-of-the-week">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             @foreach (var game in Model.GamesOfTheWeek)
             {
-                <div class="col">
-                    <div class="card game-card">
-                        <img src="~/Images/@(game.ImageName)" class="card-img-top" alt="@game.Name">
-                        <div class="card-body game-button">
-                            <h4 class="d-grid">
-                            </h4>
-
-                            <div class="d-flex justify-content-between mt-2">
-                                <h2 class="text-start">
-                                    <a asp-controller="Game"
-                                   asp-action="Details"
-                                   asp-route-id="@game.Id"
-                                   class="game-link">@game.Name</a>
-                                </h2>
-                                <h5 class="text-nowrap">
-                                    @game.Price.ToString("c")
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <partial name="_GameCard" model="game"/>
             }
         </div>
 

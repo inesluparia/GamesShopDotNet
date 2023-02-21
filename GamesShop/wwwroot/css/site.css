@@ -11824,11 +11824,11 @@ h6, .h6 {
     margin-bottom: -44px;
 }
 
-.pies-of-the-week {
+.games-of-the-week {
     margin-top: 52px;
 }
 
-.pie-button {
+.game-button {
     position: relative;
     left: 0%;
     right: 0%;
@@ -11836,19 +11836,24 @@ h6, .h6 {
     bottom: 0%;
 }
 
-.pie-card {
+.game-card {
     border: none;
+    padding: 30px;
 }
 
-.card-body.pie-button {
+.card-body.game-button {
     padding: 0px;
 }
 
-.pie-button > h4, .pie-button > .h4 {
+.tp-30 {
+    padding-top:30px;
+}
+
+.game-button > h4, .game-button > .h4 {
     margin-bottom: 0px;
 }
 
-.pie-link {
+.game-link {
     text-decoration: none;
 }
 

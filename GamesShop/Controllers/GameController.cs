@@ -21,7 +21,7 @@ namespace GamesShop.Controllers
         {
             //ViewBag.Test = "Hola from the view bag!";
             //return View(_gameRepository.GetAll);
-
+            
             GameListViewModel gameListViewModel = new GameListViewModel(_gameRepository.AllGames, "All games");
             return View(gameListViewModel);
         }
