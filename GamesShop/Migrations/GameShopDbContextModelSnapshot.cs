@@ -113,10 +113,6 @@ namespace GamesShop.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("varchar(25)");
 
-                    b.Property<string>("State")
-                        .HasMaxLength(10)
-                        .HasColumnType("varchar(10)");
-
                     b.Property<string>("ZipCode")
                         .IsRequired()
                         .HasMaxLength(10)
@@ -140,9 +136,6 @@ namespace GamesShop.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PieId")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Price")

@@ -27,7 +27,7 @@ namespace GamesShop.Models
                 var orderDetail = new OrderDetail
                 {
                     Amount = shoppingCartItem.Amount,
-                    PieId = shoppingCartItem.Game.Id,
+                    GameId = shoppingCartItem.Game.Id,
                     Price = shoppingCartItem.Game.Price
                 };
 
