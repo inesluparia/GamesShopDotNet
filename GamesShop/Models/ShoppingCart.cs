@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using GamesShop.Models.Database;
+using Microsoft.EntityFrameworkCore;
 
 namespace GamesShop.Models
 {

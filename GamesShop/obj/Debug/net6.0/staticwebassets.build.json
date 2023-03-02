@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BEPBMlSz/u8zISNjI9gQPaq1oH2hn9PPf6qznZYTmDc=",
+  "Hash": "RXQckvNT84ea6fvisTUU++4AR1uYefJQb/I+iSJKaek=",
   "Source": "GamesShop",
   "BasePath": "_content/GamesShop",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\contact\\contact.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\benji\\Documents\\CSharp\\GamesShop\\GamesShop\\wwwroot\\Images\\Erfaren Backend Developer til Spring (Boot_Cloud) og integrationsløsninger.pdf",
+      "SourceId": "GamesShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\benji\\Documents\\CSharp\\GamesShop\\GamesShop\\wwwroot\\",
+      "BasePath": "_content/GamesShop",
+      "RelativePath": "Images/Erfaren Backend Developer til Spring (Boot_Cloud) og integrationsløsninger.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Erfaren Backend Developer til Spring (Boot_Cloud) og integrationsløsninger.pdf"
     },
     {
       "Identity": "C:\\Users\\benji\\Documents\\CSharp\\GamesShop\\GamesShop\\wwwroot\\Images\\favicon.png",

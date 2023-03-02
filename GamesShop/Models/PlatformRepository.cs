@@ -1,4 +1,6 @@
-﻿namespace GamesShop.Models
+﻿using GamesShop.Models.Database;
+
+namespace GamesShop.Models
 {
     public class PlatformRepository : IPlatformRepository
     {

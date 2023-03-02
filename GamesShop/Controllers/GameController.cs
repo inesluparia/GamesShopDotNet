@@ -1,7 +1,6 @@
 ﻿using GamesShop.Models;
 using GamesShop.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Cryptography.X509Certificates;
 
 namespace GamesShop.Controllers
 {
@@ -17,13 +16,29 @@ namespace GamesShop.Controllers
         }
 
 
-        public IActionResult List()
+        public IActionResult List(string platform)
         {
             //ViewBag.Test = "Hola from the view bag!";
-            //return View(_gameRepository.GetAll);
-            
-            GameListViewModel gameListViewModel = new GameListViewModel(_gameRepository.AllGames, "All games");
-            return View(gameListViewModel);
+
+            //return View(_gameRepository.AllGames);
+
+            string? currentPlatform;
+            IEnumerable<Game> games;
+
+            if(string.IsNullOrEmpty(platform))
+            {
+                currentPlatform = "All Platforms";
+                games = _gameRepository.AllGames.OrderBy(x => x.Name);
+
+            } else
+            {
+                currentPlatform = _platformRepository.AllPlatforms.FirstOrDefault(p => p.PlatformName  == platform)?.PlatformName;
+                games = _gameRepository.AllGames.Where(g => g.Platform.PlatformName == platform).OrderBy(g => g.Name);
+
+            }
+
+            return View(new GameListViewModel(games, currentPlatform));
+
         }
 
         public IActionResult Details(int id)

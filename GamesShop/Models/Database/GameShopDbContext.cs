@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 
-namespace GamesShop.Models
+namespace GamesShop.Models.Database
 {
     public class GameShopDbContext : DbContext
     {
@@ -9,9 +10,12 @@ namespace GamesShop.Models
         }
 
         public DbSet<Platform> Platforms { get; set; }
-        public DbSet<Game> Games { get; set; }   
+        public DbSet<Game> Games { get; set; }
 
-        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set;}
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

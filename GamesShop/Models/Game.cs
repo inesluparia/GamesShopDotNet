@@ -18,7 +18,7 @@ namespace GamesShop.Models
         public string? ImageName { get; set; }
         public string? ThumbnailImageName { get; set; }
 
-        public bool IsGameOfTheWeek { get; set; } = false;
+        public bool IsGameOfTheWeek { get; set; } = true;
 
         public bool inStock { get; set; }
 

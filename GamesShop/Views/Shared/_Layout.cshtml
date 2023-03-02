@@ -34,7 +34,12 @@
                             <li>
                                 <a asp-controller="Game" asp-action="List" class="nav-link">Games</a>
                             </li>
+                            <vc:platform-menu></vc:platform-menu>
+                            <li class="nav-item">
+                                <a asp-controller="Contact" asp-action="Index" class="nav-link">Contact</a>
+                            </li>
                         </ul>
+                        <vc:shopping-cart-summary></vc:shopping-cart-summary>
                     </div>
                 </div>
             </nav>

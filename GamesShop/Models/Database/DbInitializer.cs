@@ -1,4 +1,4 @@
-﻿namespace GamesShop.Models
+﻿namespace GamesShop.Models.Database
 {
     public class DbInitializer
     {
@@ -46,7 +46,19 @@
                         Platform = Platforms["Switch"],
                         ThumbnailImageName = "plantsVsZombiesTh.jpg",
                         ImageName = "plantsVsZombies.jpg"
+                    },
+                    new Game
+                    {
+                        Id = 4,
+                        Name = "Plants Vs Zombies",
+                        YearReleased = 2011,
+                        Price = 50,
+                        Description = "Lorem Ipsum",
+                        Platform = Platforms["Xbox"],
+                        ThumbnailImageName = "plantsVsZombiesTh.jpg",
+                        ImageName = "plantsVsZombies.jpg"
                     }
+
                 );
             }
             dBcontext.SaveChanges();

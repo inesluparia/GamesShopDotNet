@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Platform>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle"
+       data-toggle="dropdown"
+       href="#"
+       role="button"
+       data-bs-toggle="dropdown"
+       id="nav-dropdown"
+       aria-expanded="false">
+        Shop
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-dropdown">
+        @foreach (var platform in Model)
+        {
+            <li>
+                <a asp-controller="Pie" asp-action="List"
+               asp-route-platform="@platform.PlatformName"
+               class="dropdown-item">
+                    @platform.PlatformName
+                </a>
+            </li>
+        }
+        <li>
+            <a asp-controller="Game" asp-action="List" asp-route-platform="" class="dropdown-item">All games</a>
+        </li>
+    </ul>
+</li>
